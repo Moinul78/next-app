@@ -15,7 +15,7 @@ export default function Context({ children }) {
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
-    return res.json()
+    return await res.json()
   }
 
 
