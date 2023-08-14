@@ -10,8 +10,17 @@ export default function Context({ children }) {
     setUser({ name: "Moinul Islam", email: "moinul@coredevs.ltd" })
   }
 
+  async function getData() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    if (!res.ok) {
+      throw new Error('Failed to fetch data')
+    }
+    return res.json()
+  }
+
+
   return (
-    <AuthContext.Provider value={{ user, updateUser }}>
+    <AuthContext.Provider value={{ user, updateUser, getData }}>
       {children}
     </AuthContext.Provider>
   );

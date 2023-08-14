@@ -1,11 +1,15 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useParams } from 'next/navigation';
+import { useGlobalContext } from "../../../context/context";
 
 const Course = () => {
   const params = useParams();
   const courseId = params.id;
   const [course, setCourse] = useState({});
+  const { getData } = useGlobalContext();
+  const data = getData();
+  console.log(data);
 
   useEffect(() => {
     if (courseId) {
