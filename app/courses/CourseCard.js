@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useGlobalContext } from "../../context/context";
 
 const CourseCard = ({ course: { id, title, img, description, fee } }) => {
   const [fullTxt, setFullTxt] = useState(false);
-
+  const { user } = useGlobalContext();
+  console.log("user", user);
   return (
     <div className="relative w-full sm:max-w-sm rounded-xl overflow-hidden shadow-md">
       <img className="w-full" src={img} alt={title} />

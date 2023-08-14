@@ -45,7 +45,7 @@ export default function Category() {
           <div class="flex justify-between w-full mt-4">
             <div class="flex items-center text-gray-500">
               <input id="input1" type="checkbox" class="mr-2" />
-              <label for="input1" class="select-none cursor-pointer">Compare</label>
+              <label htmlFor="input1" class="select-none cursor-pointer">Compare</label>
             </div>
             <div>
               <button class="py-1 px-4 bg-white text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center">                Add to List

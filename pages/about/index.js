@@ -1,5 +1,5 @@
 import Link from "next/link";
-import About from "./About";
+import About from "./about";
 
 export default function AboutUs() {
   return (
