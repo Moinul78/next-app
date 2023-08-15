@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import CourseCard from "./courseCard";
-import "../globals.css";
 
 const Courses = () => {
   const [courses, setCourses] = useState(null);
