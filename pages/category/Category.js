@@ -1,7 +1,11 @@
+import Private from "../../routing/Private";
+
 export default function Category() {
   return (
-    <div>
-      This is child
-    </div>
+    <Private>
+      <div>
+        This is admin role private
+      </div>
+    </Private>
   )
 }

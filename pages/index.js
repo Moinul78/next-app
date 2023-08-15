@@ -5,7 +5,7 @@ export default function handler() {
   const { user, setUser } = useAuth();
 
   const handleUser = (res) => {
-    setUser({ name: 'Moinul Islam', email: 'moinul@coredevs.ltd' })
+    setUser({ name: 'Moinul Islam', email: 'moinul@coredevs.ltd', role: 'admin' })
   }
   const handleLogout = () => {
     setUser(null)
