@@ -3,8 +3,6 @@ import { useAuth } from '../../context/AuthProvider';
 import PrivateLayout from "../../layouts/PrivateLayout";
 
 export default function CategoryPage() {
-  const { user } = useAuth();
-  console.log(user);
   return (
     <PrivateLayout>
       <div>

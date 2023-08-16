@@ -10,7 +10,6 @@ export default function handler() {
   const handleLogout = () => {
     setUser(null)
   }
-  console.log(user);
   return (
     <>
       <h1 className="text-center text-3xl font-bold mt-10">Hello, Next.js!</h1>
@@ -19,6 +18,8 @@ export default function handler() {
         <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/dashboard">Dashboard</Link> */}
         <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/about">Go to about</Link>
         <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/category">Go to category</Link>
+        <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/profile">Your Profile</Link>
+
         {
           user
             ? <button className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" onClick={handleLogout}>Logout</button>
