@@ -18,6 +18,7 @@ export default function handler() {
         <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/dashboard">Dashboard</Link> */}
         <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/about">Go to about</Link>
         <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/category">Go to category</Link>
+        <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/courses">Courses</Link>
         <Link className="p-4 bg-blue-900 rounded-lg hover:bg-blue-500" href="/profile">Your Profile</Link>
 
         {
