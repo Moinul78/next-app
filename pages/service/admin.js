@@ -75,3 +75,15 @@ export const updateCategory = async (updateValue) => {
 
   } catch { (e) => console.log(e) }
 }
+
+// Delete all category
+
+export const deleteAllCategory = async () => {
+  try {
+    const res = await fetch(`${baseURL}/api/admin/category`, {
+      method: 'DELETE',
+    })
+    const data = await res.json();
+    return data;
+  } catch { (e) => console.log(e) }
+}

@@ -1,9 +1,11 @@
 import PublicLayout from "../../layouts/PublicLayout";
 import { useAuth } from "../../context/AuthProvider";
+import connectDB from "../../utils/network/connectDB";
 
 export default function Login() {
   const { user, setUser } = useAuth();
-  const handleUser = () => {
+
+  const handleUser = async () => {
     setUser({ name: 'Moinul Islam', email: 'moinul@coredevs.ltd', role: 'admin' })
   }
   console.log(user);
